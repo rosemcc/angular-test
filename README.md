@@ -1,27 +1,35 @@
-# AngularTest
+# Angular Test App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+App to demonstrate using Angular, Cognito and Amplify
 
-## Development server
+## Steps to recreate
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Setup angular app
+```
+npm install -g @angular/cli
+ng new angular-test
+    -> angular routing: yes
+cd angular-test
+```
+### Setup Amplify
+[Getting Started](https://docs.amplify.aws/start/q/integration/angular)
+```
+npm install aws-amplify @aws-amplify/ui-angular
+```
+Modify/create ~/.aws/config file:
+```
+[profile default]
+region=ap-southeast-2
+```
+Initialise amplify project
+- when it asks for user profile, choose default
+```
+amplify init
+```
 
-## Code scaffolding
+### Add Amplify Auth
+[Amplify Authentication](https://docs.amplify.aws/lib/auth/getting-started/q/platform/js#angular)
+```
+amplify add auth
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
