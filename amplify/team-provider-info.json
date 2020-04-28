@@ -10,6 +10,20 @@
             "StackName": "amplify-angulartest-dev-130646",
             "StackId": "arn:aws:cloudformation:ap-southeast-2:416527880812:stack/amplify-angulartest-dev-130646/86153e60-88ec-11ea-9e98-025411181be4",
             "AmplifyAppId": "du8n9qewhy6nn"
+        },
+        "categories": {
+            "function": {
+                "angulartestauthCustomMessage": {
+                    "REDIRECTURL": "http://localhost:4200/",
+                    "EMAILSUBJECT": "Account Confirmation",
+                    "EMAILMESSAGE": "Your account confirmation"
+                }
+            },
+            "auth": {
+                "angulartestauth": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"LoginWithAmazon\",\"client_id\":\"453hiik54eaa36mumgjqko1h23\",\"client_secret\":\"1f4aih53gp8rjnmkvfmtj72516l2gf8g6juv1nrjmt6r8519felm\"}]"
+                }
+            }
         }
     }
 }
